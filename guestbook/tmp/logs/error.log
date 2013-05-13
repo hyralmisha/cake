@@ -1,0 +1,1743 @@
+2013-05-12 21:20:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'users_grup' cannot be null
+Request URL: /cake/guestbook/users/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `ca...')
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(User), Array, Array)
+#4 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(43): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-12 21:21:59 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'count' cannot be null
+Request URL: /cake/guestbook/tags/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `ca...')
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Tag), Array, Array)
+#4 Z:\home\localhost\www\cake\guestbook\Controller\TagsController.php(43): Model->save(Array)
+#5 [internal function]: TagsController->add()
+#6 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(TagsController), Array)
+#7 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#9 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-12 23:38:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'date_edit' cannot be null
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `ca...')
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Post), Array, Array)
+#4 Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php(44): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-12 23:38:41 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'date_edit' cannot be null
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `ca...')
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(Post), Array, Array)
+#4 Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php(44): Model->save(Array)
+#5 [internal function]: PostsController->add()
+#6 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#7 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#9 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-13 00:19:30 Error: [NotFoundException] Пост не існує
+Request URL: /cake/guestbook/posts/edit/
+Stack Trace:
+#0 [internal function]: PostsController->edit()
+#1 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#4 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-13 00:40:00 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_04.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:42:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_04.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:42:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_04.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_04.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_07.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_23.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_08.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/css/images/loadfoo_layoutv2_cut_10.gif
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 00:58:45 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 16]
+2013-05-13 00:58:45 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 16, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 16, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:58:46 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 16]
+2013-05-13 00:58:46 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 16, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 16, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:58:46 Error: Fatal Error (4): syntax error, unexpected T_VARIABLE, expecting T_FUNCTION in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 16]
+2013-05-13 00:58:46 Error: [FatalErrorException] syntax error, unexpected T_VARIABLE, expecting T_FUNCTION
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 16)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 16, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 16, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:32 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 22]
+2013-05-13 00:59:32 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:34 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 22]
+2013-05-13 00:59:34 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:35 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 22]
+2013-05-13 00:59:35 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:35 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 22]
+2013-05-13 00:59:35 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:36 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 22]
+2013-05-13 00:59:36 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:36 Error: Fatal Error (64): Cannot redeclare PostsController::index() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 22]
+2013-05-13 00:59:36 Error: [FatalErrorException] Cannot redeclare PostsController::index()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 22, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 00:59:49 Error: Fatal Error (1): Call to a member function init() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 635]
+2013-05-13 00:59:49 Error: [FatalErrorException] Call to a member function init() on a non-object
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 635)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 635, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 635, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:00:48 Error: Fatal Error (1): Call to a member function is() on a non-object in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 49]
+2013-05-13 01:00:48 Error: [FatalErrorException] Call to a member function is() on a non-object
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 49)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 49, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 49, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:00:58 Error: Fatal Error (1): Call to a member function body() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 948]
+2013-05-13 01:00:58 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 948)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:01:43 Error: Fatal Error (1): Call to a member function body() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 948]
+2013-05-13 01:01:43 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 948)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:01:48 Error: Fatal Error (1): Class 'controllers' not found in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 18]
+2013-05-13 01:01:48 Error: [FatalErrorException] Class 'controllers' not found
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'controll...', 'Z:\home\localho...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'controll...', 'Z:\home\localho...', 18, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'controll...', 'Z:\home\localho...', 18, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:03:01 Error: Fatal Error (1): Call to a member function body() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 948]
+2013-05-13 01:03:01 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 948)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:03:03 Error: Fatal Error (1): Call to a member function body() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 948]
+2013-05-13 01:03:03 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 948)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:03:09 Error: Fatal Error (1): Class 'Controllers' not found in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 18]
+2013-05-13 01:03:09 Error: [FatalErrorException] Class 'Controllers' not found
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Controll...', 'Z:\home\localho...', 18)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Controll...', 'Z:\home\localho...', 18, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Controll...', 'Z:\home\localho...', 18, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:03:23 Error: Fatal Error (1): Call to a member function body() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 948]
+2013-05-13 01:03:23 Error: [FatalErrorException] Call to a member function body() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 948)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 948, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:05:05 Error: Fatal Error (1): Call to a member function init() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 635]
+2013-05-13 01:05:05 Error: [FatalErrorException] Call to a member function init() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 635)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 635, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 635, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:06:31 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_VARIABLE in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 15]
+2013-05-13 01:06:31 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_VARIABLE
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:06:32 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_VARIABLE in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 15]
+2013-05-13 01:06:32 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_VARIABLE
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:06:41 Error: Fatal Error (4): syntax error, unexpected T_OBJECT_OPERATOR, expecting ',' or ';' in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 15]
+2013-05-13 01:06:41 Error: [FatalErrorException] syntax error, unexpected T_OBJECT_OPERATOR, expecting ',' or ';'
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:06:48 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 15]
+2013-05-13 01:06:48 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:06:49 Error: Fatal Error (4): syntax error, unexpected T_STRING, expecting T_FUNCTION in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 15]
+2013-05-13 01:06:49 Error: [FatalErrorException] syntax error, unexpected T_STRING, expecting T_FUNCTION
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 15, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 01:38:32 Error: [NotFoundException] Invalid user
+Request URL: /cake/guestbook/users/view/Hyral
+Stack Trace:
+#0 [internal function]: UsersController->view('Hyral')
+#1 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#3 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-05-13 01:58:05 Error: Fatal Error (1): Call to a member function init() on a non-object in [Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php, line 635]
+2013-05-13 01:58:05 Error: [FatalErrorException] Call to a member function init() on a non-object
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 635)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 635, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 635, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 03:18:37 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'users_grup' cannot be null
+Request URL: /cake/guestbook/users/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1008): DboSource->execute('INSERT INTO `ca...')
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(1744): DboSource->create(Object(User), Array, Array)
+#4 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(46): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#9 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-05-13 03:24:07 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [Z:\home\localhost\www\cake\guestbook\Model\User.php, line 43]
+2013-05-13 03:24:07 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/guestbook/users/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 43, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 43, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 03:24:19 Error: Fatal Error (4): syntax error, unexpected ';', expecting ')' in [Z:\home\localhost\www\cake\guestbook\Model\User.php, line 43]
+2013-05-13 03:24:19 Error: [FatalErrorException] syntax error, unexpected ';', expecting ')'
+Request URL: /cake/guestbook/users/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 43, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 43, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:44:20 Error: [MissingControllerException] Controller class PermissionsController could not be found.
+Exception Attributes: array (
+  'class' => 'PermissionsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/permissions
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 04:45:15 Error: [MissingControllerException] Controller class PermissionsController could not be found.
+Exception Attributes: array (
+  'class' => 'PermissionsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/permissions
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 04:45:20 Error: [MissingControllerException] Controller class PermissionsController could not be found.
+Exception Attributes: array (
+  'class' => 'PermissionsController',
+  'plugin' => NULL,
+)
+Request URL: /cake/guestbook/permissions
+Stack Trace:
+#0 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-05-13 04:46:15 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:46:15 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:46:39 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:46:39 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:46:39 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:46:39 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:46:50 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:46:50 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:47:13 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:47:13 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:47:13 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:47:13 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:47:51 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:47:51 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:47:52 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:47:52 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:48:53 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:48:53 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 04:48:55 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 04:48:55 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:28:37 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:28:37 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:28:44 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:28:44 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:28:55 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:28:55 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:30:33 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:30:33 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:30:34 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:30:34 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:30:35 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:30:35 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:33:53 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:33:53 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:33:54 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:33:54 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:33:55 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:33:55 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:33:56 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:33:56 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:34:00 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:34:00 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:41:57 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:41:57 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:41:59 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:41:59 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:00 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:00 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:01 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:01 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:06 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:06 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:07 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:07 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:56 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:56 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:57 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:57 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:42:58 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:42:58 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:04 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:04 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:42 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:42 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:43 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:43 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:44 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:44 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:44 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:44 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:44 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:44 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:45 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:45 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:45 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:45 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:46 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:46 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:43:53 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:43:53 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:45:30 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:45:30 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:45:32 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:45:32 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:45:48 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:45:48 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:45:49 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:45:49 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:46:20 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:46:20 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:46:21 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:46:21 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:47:02 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:47:02 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:47:09 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:47:09 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:47:10 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:47:10 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:47:11 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 3]
+2013-05-13 11:47:11 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 3, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:05 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:05 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:06 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:06 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:06 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:06 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:07 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:07 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:07 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:07 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:08 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:08 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 11:50:08 Error: Fatal Error (1): Call to a member function create() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 11:50:08 Error: [FatalErrorException] Call to a member function create() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:11 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:11 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:12 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:12 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:12 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:12 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:13 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:13 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:13 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:13 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:38 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:38 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:39 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 4]
+2013-05-13 12:16:39 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 4, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:16:46 Error: Fatal Error (1): Call to a member function check() on a non-object in [Z:\home\localhost\www\cake\guestbook\View\Users\login.ctp, line 5]
+2013-05-13 12:16:46 Error: [FatalErrorException] Call to a member function check() on a non-object
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'Z:\home\localho...', 5)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'Z:\home\localho...', 5, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'Z:\home\localho...', 5, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 12:31:51 Error: Fatal Error (64): Cannot redeclare AppController::isAuthorized() in [Z:\home\localhost\www\cake\guestbook\Controller\AppController.php, line 66]
+2013-05-13 12:31:51 Error: [FatalErrorException] Cannot redeclare AppController::isAuthorized()
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'Z:\home\localho...', 66)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'Z:\home\localho...', 66, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'Z:\home\localho...', 66, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 13:12:38 Error: Fatal Error (4): syntax error, unexpected T_STRING in [Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp, line 36]
+2013-05-13 13:12:38 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cake/guestbook/posts/
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 36, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 36, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 13:12:44 Error: Fatal Error (4): syntax error, unexpected T_STRING in [Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp, line 36]
+2013-05-13 13:12:44 Error: [FatalErrorException] syntax error, unexpected T_STRING
+Request URL: /cake/guestbook/posts/
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 36, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 36, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 13:21:19 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cake/guestbook/users
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 13:51:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(599): Model->find('first', Array)
+#6 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('findByUsername', Array, Object(User))
+#7 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(23): Model->__call('findByUsername', Array)
+#8 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(23): User->findByUsername(NULL)
+#9 [internal function]: UsersController->login()
+#10 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-13 13:51:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(599): Model->find('first', Array)
+#6 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('findByUsername', Array, Object(User))
+#7 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(23): Model->__call('findByUsername', Array)
+#8 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(23): User->findByUsername('hyralm@mail.ru')
+#9 [internal function]: UsersController->login()
+#10 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-13 14:01:35 Error: Fatal Error (4): syntax error, unexpected $end, expecting T_FUNCTION in [Z:\home\localhost\www\cake\guestbook\Controller\AppController.php, line 76]
+2013-05-13 14:01:35 Error: [FatalErrorException] syntax error, unexpected $end, expecting T_FUNCTION
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'Z:\home\localho...', 76)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'Z:\home\localho...', 76, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'Z:\home\localho...', 76, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 14:14:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(599): Model->find('first', Array)
+#6 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('findByUsername', Array, Object(User))
+#7 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(31): Model->__call('findByUsername', Array)
+#8 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(31): User->findByUsername('hyralm@mail.ru')
+#9 [internal function]: UsersController->login()
+#10 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-13 14:24:13 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(599): Model->find('first', Array)
+#6 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(800): DboSource->query('findByUsername', Array, Object(User))
+#7 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(26): Model->__call('findByUsername', Array)
+#8 Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php(26): User->findByUsername('hyralm@mail.ru')
+#9 [internal function]: UsersController->login()
+#10 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#12 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#13 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-05-13 14:51:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.email' in 'field list'
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php(58): Model->find('list')
+#6 [internal function]: PostsController->add()
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 14:51:43 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.email' in 'field list'
+Request URL: /cake/guestbook/posts/edit/4
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php(88): Model->find('list')
+#6 [internal function]: PostsController->edit('4')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 14:53:57 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.email' in 'field list'
+Request URL: /cake/guestbook/posts/edit/7
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `User`.`...', Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(670): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Model\Datasource\DboSource.php(1081): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 Z:\home\localhost\www\cake\lib\Cake\Model\Model.php(2696): DboSource->read(Object(User), Array)
+#5 Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php(88): Model->find('list')
+#6 [internal function]: PostsController->edit('7')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 15:05:03 Error: Fatal Error (1): Call to undefined method View::checkSession() in [Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp, line 39]
+2013-05-13 15:05:03 Error: [FatalErrorException] Call to undefined method View::checkSession()
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'Z:\home\localho...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'Z:\home\localho...', 39, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'Z:\home\localho...', 39, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 15:06:00 Error: [MissingHelperException] Helper class AppControllersHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AppControllersHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('AppControllers')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('AppControllers')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(39): View->__get('AppControllers')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 15:06:09 Error: [MissingHelperException] Helper class AppControllersHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AppControllersHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('AppControllers')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('AppControllers')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(39): View->__get('AppControllers')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 15:09:26 Error: [MissingHelperException] Helper class AppControllersHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AppControllersHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('AppControllers')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('AppControllers')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(39): View->__get('AppControllers')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 15:43:02 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cake/guestbook/users
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 15:43:08 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cake/guestbook/users
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 15:45:59 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cake/guestbook/users
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 18:48:26 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cake/guestbook/users
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 19:25:02 Error: [MissingActionException] Action UsersController::index() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'index',
+)
+Request URL: /cake/guestbook/users
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-05-13 19:44:40 Error: Fatal Error (64): Can't use method return value in write context in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 20]
+2013-05-13 19:44:40 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'Z:\home\localho...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'Z:\home\localho...', 20, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'Z:\home\localho...', 20, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 19:45:04 Error: Fatal Error (64): Can't use method return value in write context in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 20]
+2013-05-13 19:45:04 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'Z:\home\localho...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'Z:\home\localho...', 20, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'Z:\home\localho...', 20, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 19:45:05 Error: Fatal Error (64): Can't use method return value in write context in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 20]
+2013-05-13 19:45:05 Error: [FatalErrorException] Can't use method return value in write context
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(64, 'Can't use metho...', 'Z:\home\localho...', 20)
+#1 [internal function]: ErrorHandler::handleError(64, 'Can't use metho...', 'Z:\home\localho...', 20, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 64, 'Can't use metho...', 'Z:\home\localho...', 20, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 19:48:57 Error: Fatal Error (1): Call to undefined method PostsController::validSession() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 20]
+2013-05-13 19:48:57 Error: [FatalErrorException] Call to undefined method PostsController::validSession()
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'Z:\home\localho...', 20)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'Z:\home\localho...', 20, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'Z:\home\localho...', 20, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 19:54:13 Error: Fatal Error (1): Call to undefined method SessionComponent::del() in [Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php, line 41]
+2013-05-13 19:54:13 Error: [FatalErrorException] Call to undefined method SessionComponent::del()
+Request URL: /cake/guestbook/users/logout
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'Z:\home\localho...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'Z:\home\localho...', 41, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'Z:\home\localho...', 41, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 19:54:17 Error: Fatal Error (1): Call to undefined method SessionComponent::del() in [Z:\home\localhost\www\cake\guestbook\Controller\UsersController.php, line 41]
+2013-05-13 19:54:17 Error: [FatalErrorException] Call to undefined method SessionComponent::del()
+Request URL: /cake/guestbook/users/logout
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'Z:\home\localho...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'Z:\home\localho...', 41, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'Z:\home\localho...', 41, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 19:56:37 Error: [MissingHelperException] Helper class ControllerHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:56:46 Error: [MissingHelperException] Helper class ControllerHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:56:48 Error: [MissingHelperException] Helper class ControllerHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/tags/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(TagsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:56:49 Error: [MissingHelperException] Helper class ControllerHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/users/login
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:56:52 Error: [MissingHelperException] Helper class ControllerHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:15 Error: [MissingHelperException] Helper class ControllerHelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelperHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('ControllerHelpe...')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('ControllerHelpe...')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('ControllerHelpe...')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:16 Error: [MissingHelperException] Helper class ControllerHelperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'ControllerHelperHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('ControllerHelpe...')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('ControllerHelpe...')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('ControllerHelpe...')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:24 Error: [MissingHelperException] Helper class Controller_elperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'Controller_elperHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller_elpe...')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller_elpe...')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller_elpe...')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:35 Error: [MissingHelperException] Helper class Controller_helperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'Controller_helperHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller_help...')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller_help...')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller_help...')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:36 Error: [MissingHelperException] Helper class Controller_helperHelper could not be found.
+Exception Attributes: array (
+  'class' => 'Controller_helperHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('Controller_help...')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('Controller_help...')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('Controller_help...')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:54 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('User')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 19:57:56 Error: [MissingHelperException] Helper class UserHelper could not be found.
+Exception Attributes: array (
+  'class' => 'UserHelper',
+  'plugin' => false,
+)
+Request URL: /cake/guestbook/posts
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('User')
+#1 Z:\home\localhost\www\cake\lib\Cake\View\View.php(835): HelperCollection->__isset('User')
+#2 Z:\home\localhost\www\cake\guestbook\View\Layouts\main.ctp(38): View->__get('User')
+#3 Z:\home\localhost\www\cake\lib\Cake\View\View.php(947): include('Z:\home\localho...')
+#4 Z:\home\localhost\www\cake\lib\Cake\View\View.php(909): View->_evaluate('Z:\home\localho...', Array)
+#5 Z:\home\localhost\www\cake\lib\Cake\View\View.php(535): View->_render('Z:\home\localho...')
+#6 Z:\home\localhost\www\cake\lib\Cake\View\View.php(479): View->renderLayout('', 'main')
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(948): View->render(NULL, NULL)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(194): Controller->render()
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-05-13 21:07:19 Error: Fatal Error (1): Call to undefined function clean() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 54]
+2013-05-13 21:07:19 Error: [FatalErrorException] Call to undefined function clean()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'Z:\home\localho...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'Z:\home\localho...', 54, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'Z:\home\localho...', 54, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 21:07:45 Error: Fatal Error (1): Call to undefined function clean() in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 54]
+2013-05-13 21:07:45 Error: [FatalErrorException] Call to undefined function clean()
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'Z:\home\localho...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'Z:\home\localho...', 54, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'Z:\home\localho...', 54, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 21:08:56 Error: Fatal Error (1): Class 'Sanitize' not found in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 54]
+2013-05-13 21:08:56 Error: [FatalErrorException] Class 'Sanitize' not found
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Sanitize...', 'Z:\home\localho...', 54)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Sanitize...', 'Z:\home\localho...', 54, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Sanitize...', 'Z:\home\localho...', 54, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 21:09:54 Error: Fatal Error (1): Class 'Sanitize' not found in [Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php, line 55]
+2013-05-13 21:09:54 Error: [FatalErrorException] Class 'Sanitize' not found
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Error\ErrorHandler.php(184): ErrorHandler::handleFatalError(1, 'Class 'Sanitize...', 'Z:\home\localho...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Sanitize...', 'Z:\home\localho...', 55, Array)
+#2 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Sanitize...', 'Z:\home\localho...', 55, Array)
+#3 Z:\home\localhost\www\cake\lib\Cake\Core\App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-05-13 21:11:47 Error: [MissingDatasourceConfigException] The datasource configuration "cakes" was not found in database.php
+Exception Attributes: array (
+  'config' => 'cakes',
+)
+Request URL: /cake/guestbook/posts/add
+Stack Trace:
+#0 Z:\home\localhost\www\cake\lib\Cake\Model\ConnectionManager.php(93): ConnectionManager::_getConnectionObject('cakes')
+#1 Z:\home\localhost\www\cake\lib\Cake\Utility\Sanitize.php(70): ConnectionManager::getDataSource('cakes')
+#2 Z:\home\localhost\www\cake\lib\Cake\Utility\Sanitize.php(263): Sanitize::escape(']\\\\\&#039;/.....', 'cakes')
+#3 Z:\home\localhost\www\cake\lib\Cake\Utility\Sanitize.php(242): Sanitize::clean(']\\\\\'/..0-0-0...', Array)
+#4 Z:\home\localhost\www\cake\lib\Cake\Utility\Sanitize.php(242): Sanitize::clean(Array, Array)
+#5 Z:\home\localhost\www\cake\guestbook\Controller\PostsController.php(55): Sanitize::clean(Array, 'cakes')
+#6 [internal function]: PostsController->add()
+#7 Z:\home\localhost\www\cake\lib\Cake\Controller\Controller.php(486): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#8 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#9 Z:\home\localhost\www\cake\lib\Cake\Routing\Dispatcher.php(162): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest), Object(CakeResponse))
+#10 Z:\home\localhost\www\cake\guestbook\webroot\index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
