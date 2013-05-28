@@ -7,6 +7,7 @@
             echo $this->Form->input('first_name', array('label' => 'Ім\'я'));
             echo $this->Form->input('username', array('label' => 'Email'));
             echo $this->Form->input('password', array('label' => 'Пароль'));
+            echo $this->Form->input('Group', array('label' => 'Група'));
 	?>
 	</fieldset><br/>
 <?php echo $this->Form->end(__('Зареєструватися')); ?>

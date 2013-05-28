@@ -1,6 +1,7 @@
 <?php
 App::uses('AppController', 'Controller');
 App::uses('Sanitize', 'Utility');
+
 /**
  * Posts Controller
  *
@@ -17,11 +18,57 @@ class PostsController extends AppController
      */
     public function index() 
     {
-        $this -> layout();
         $this -> Post -> recursive = 0;
         $this -> set( 'posts', $this -> paginate() );
     }
+    
+    /**
+    * search method
+    *
+    * @return void
+    */
+    public function search() 
+    {
+        if (empty($this->params['named']) ) {
+            $data = $this->params['url'];
+        } else {
+            $data = $this->params['named'] ;
+        }
+        $searchPhrase = $data['name'];
+        $data = $this->Post->search($searchPhrase); 
+        if ( empty( $data ) ) {
+            $this -> Session -> setFlash(__( 'Пошук не дав результатів!') );
+        }
+        $this->set('posts', $data);//$this->paginate(null,$data));
 
+        /*//
+        $condtitle=NULL;
+        //$this->set('posts', array());
+        $condmessage=NULL;
+        $data=array();
+        if ($this->request->is('post')){
+            //$this->set('error', NULL);
+            $title=$this->data['name'];
+            $message=$this->data['name'];
+            if (!empty($title))
+                $condtitle="Post.title LIKE '%$title%'";
+            if (!empty($message))
+                $condmessage="Post.message LIKE '%$message%'";
+            //$date=date("Y-m-d",mktime(NULL, NULL, NULL, $this->data['created']['month'],$this->data['created']['day'], $this->data['created']['year']));
+            $conditions=array('OR'=>array('date(Post.created)'=>$date,$condtitle, $condmessage));
+            if ($data = $this->Post->find('all', array('order'=>array('id'=>'DESC'), 'conditions'=>$conditions))){
+                //$this->set('posts', $data);
+                $this->set('posts', $this->paginate(null,$data));
+            } else
+            {
+                $this->set('error', 'За даним запитом нічого не знайдено<br />');
+            }*/
+        
+        
+        //$conditions=$this->getConditions($searchColumns);
+        //$this->set('posts', $this->paginate(null,$conditions));
+     }
+    
     /**
      * view method
      *
@@ -31,7 +78,6 @@ class PostsController extends AppController
      */
     public function view($id = null) 
     {
-        $this -> layout();
         if ( !$this -> Post -> exists( $id ) ) {
             $this -> Session -> setFlash(__( 'Такого поста не існує.') );
             $this -> redirect( array( 'controller' => 'posts', 'action' => 'index'), null, true );
@@ -47,8 +93,6 @@ class PostsController extends AppController
      */
     public function add() 
     {
-        $this -> layout();    
-        $this -> checkSession();
         if ( $this -> request -> is( 'post' ) ) {
             $this -> request -> data ['Post']['date_create'] = date( "Y-m-d H:i:s" ); 
             $this -> request -> data ['Post']['date_edit'] = date( "Y-m-d H:i:s" ); 
@@ -75,8 +119,6 @@ class PostsController extends AppController
     */
     public function edit($id = null) 
     {
-        $this -> layout();    
-        $this -> checkSession();
         if ( !$this -> Post -> exists( $id ) ) {
             $this -> Session -> setFlash(__( 'Такого поста не існує.') );
             $this -> redirect( array( 'action' => 'index'), null, true );
@@ -108,8 +150,6 @@ class PostsController extends AppController
      */
     public function delete($id = null) 
     {
-        $this -> layout();
-        $this -> checkSession();
         $this -> Post -> id = $id;
         if ( !$this -> Post -> exists() ) {
             $this -> Session -> setFlash(__( 'Такого поста не існує.') );

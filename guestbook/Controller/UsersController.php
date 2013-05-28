@@ -14,36 +14,29 @@ class UsersController extends AppController
      *
      * @return void
      */
-
-
-    public function login()
-    {
-        $this -> layout();
-        if (!empty($this->data)) {
-            // перевіряємо, чи є в БД користувач з введеним email
-            $someone = $this->User->findByUsername($this->data['User']['username']);
-            //Якщо користувач існує, порівнюємо паролі
-            if(!empty($someone['User']['password']) && 
-                $someone['User']['password'] == md5($this->data['User']['password'])) {
-                //Створюємо сесію
-                $this->Session->write('User', $someone['User']);
-                $this->Session->setFlash(__('Ви успішно ввійшли на сайт'));
-                $this->redirect(array('controller' => 'posts','action' => 'index'));
-            } else {
-                $this->Session->setFlash(__('Ви не ввійшли на сайт. Спробуйте ще раз.'));
-                $this->redirect(array('controller' => 'users','action' => 'login'));
-            }
-        }
+     public function beforeFilter() {
+        parent::beforeFilter();
+        $this->Auth->allow('add'); // дозволяємо користувачам зареєструватися
     }
        
-    public function logout() 
-    {
-        $this->Session->delete('User');
-        $this->redirect(array('controller' => 'posts','action' => 'index'));
+    
+    public function login() {
+        if ($this->request->is('post')) {
+            if ($this->Auth->login()) {
+                $this->redirect($this->Auth->redirect());
+            } else {
+                $this->Session->setFlash(__('Неправильний логін або пароль, повторіть спробу'));
+            }
+        }
+     
+    }
+
+    
+    public function logout(){
+        $this->Session->delete('Permissions');
+        $this->redirect($this->Auth->logout());
     }
     
-    
-
 
     /**
      * add method
@@ -52,19 +45,24 @@ class UsersController extends AppController
      */
     public function registration() 
     {
-        $this -> layout();
         if ($this->request->is('post')) {
-            $this->request->data ['User']['date_create'] = date( "Y-m-d H:i:s" ); 
-            $this->request->data ['User']['password'] = md5( trim( $this->request->data ['User']['password'] ) ); 
+            //$this->data['User']['password'] = AuthComponent::password($this->data['User']['password']);
+            //$this->data['User']['password'] = $this->Auth->password($this->data['User']['password']);
+            //$this->request->data ['User']['password'] = sha1( trim( $this->request->data ['User']['password'] ) ); 
             $this->User->create();
             if ($this->User->save($this->request->data)) {
-                    $this->Session->setFlash(__('The user has been saved'));
+                    $this->Session->setFlash('The user has been saved');
                     $this->redirect(array('controller' => 'posts','action' => 'index'));
             } else {
-                    $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+                    //$this->Session->setFlash(__('The user could not be saved. Please, try again.'));
             }
         }
+        
+        $groups = $this -> User -> Group -> find( 'list' );
+        $this -> set( compact( 'groups' ) );
     }
 
 
 }
+
+

@@ -17,7 +17,6 @@ class TagsController extends AppController
      */
     public function index() 
     {
-        $this -> layout();
         $this->Tag->recursive = 0;
         $this->set('tags', $this->paginate());
     }
@@ -31,7 +30,6 @@ class TagsController extends AppController
      */
     public function view($id = null) 
     {
-        $this -> layout();
         if (!$this->Tag->exists($id)) {
             $this -> Session -> setFlash(__( 'Такого тега не існує.') );
             $this -> redirect( array( 'controller' => 'tags', 'action' => 'index'), null, true );
@@ -47,8 +45,6 @@ class TagsController extends AppController
      */
     public function add() 
     {
-        $this -> layout();
-        $this -> checkSession();
         if ($this->request->is('post')) {
             $this -> request -> data = Sanitize::clean ( $this -> request -> data );
             $this->Tag->create();
@@ -72,8 +68,6 @@ class TagsController extends AppController
      */
     public function edit($id = null) 
     {
-        $this -> layout();
-        $this -> checkSession();
         if (!$this->Tag->exists($id)) {
             $this -> Session -> setFlash(__( 'Такого тега не існує.') );
             $this -> redirect( array( 'controller' => 'tags', 'action' => 'index'), null, true );
@@ -103,7 +97,6 @@ class TagsController extends AppController
      */
     public function delete($id = null) 
     {
-        $this -> checkSession();
         $this->Tag->id = $id;
         if (!$this->Tag->exists()) {
             $this -> Session -> setFlash(__( 'Такого тега не існує.') );

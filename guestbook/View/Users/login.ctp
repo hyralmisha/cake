@@ -1,7 +1,7 @@
 
 <div class="users form">
     
-<?php echo $this->Form->create('User'); ?>
+<?php echo $this->Form->create('User', array('action' => 'login')); ?>
 	<fieldset>
         <legend><?php echo __('Вхід'); ?></legend><br/>
 	<?php
@@ -11,3 +11,4 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
 </div>
+

@@ -55,5 +55,19 @@ class Post extends AppModel {
 			'insertQuery' => ''
 		)
 	);
+        
+        public function search($searchPhrase)
+        {
+            $result = $this->query("SELECT *
+                                FROM gb_posts AS Post
+                                WHERE MATCH (
+                                title, msg_short, msg_full
+                                )
+                                AGAINST (
+                                '$searchPhrase*' IN BOOLEAN MODE
+                                )");
+            return $result;
+        }
+        
 
 }
